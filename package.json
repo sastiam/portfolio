@@ -22,7 +22,7 @@
     "vue-router": "^4.1.6"
   },
   "lint-staged": {
-    "*.{ts}": "eslint --fix"
+    "*.{vue,ts}": "eslint --fix"
   },
   "devDependencies": {
     "@testing-library/vue": "^7.0.0",
