@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /// <reference types="vitest" />
 import { defineConfig } from 'vitest/config';
 import { loadEnv } from 'vite';
@@ -14,7 +15,11 @@ import Components from 'unplugin-vue-components/vite';
 //   plugins: [vue()],
 // })
 
-export default async ({ mode }) => {
+interface Env {
+  mode: string
+}
+
+export default async ({ mode }: Env) => {
   process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
 
   const appEnvironment = String(process.env.VUE_APP_ENVIRONMENT).toLowerCase();

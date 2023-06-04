@@ -6,9 +6,10 @@
   "name": "portfolio",
   "private": false,
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "test": "npx vitest",
     "coverage": "vitest run --coverage",
@@ -23,7 +24,7 @@
   },
   "lint-staged": {
     "*.{vue,ts}": "eslint --fix",
-    "*.{css}": "npm run lint:style-fix"
+    "*.css": "npm run lint:style-fix"
   },
   "devDependencies": {
     "@testing-library/vue": "^7.0.0",
