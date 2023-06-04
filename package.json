@@ -4,7 +4,7 @@
     "email": "me@sastiam.tech"
   },
   "name": "portfolio",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -16,7 +16,7 @@
     "lint:style": "stylelint src/**/*.*.css",
     "lint:style-fix": "npm run lint:style -- --fix",
     "prepare": "husky install",
-		"prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
   },
   "dependencies": {
     "@vueuse/core": "^10.1.0",
@@ -24,8 +24,7 @@
     "vue-router": "^4.1.6"
   },
   "lint-staged": {
-		"*.ts": [ "prettier --config .prettierrc 'src/**/*.ts' --write" ],
-    "*.css": [ "lint:style" ]
+    "prettier --config .prettierrc 'src/**/*.ts' --write"
   },
   "husky": {
     "hooks": {
@@ -45,7 +44,7 @@
     "eslint": "^8.39.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-vue": "^9.11.0",
-    "husky": "^8.0.3",
+    "husky": "^8.0.0",
     "jsdom": "^21.1.1",
     "lint-staged": "^13.2.2",
     "postcss": "^8.4.23",

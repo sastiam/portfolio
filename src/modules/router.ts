@@ -10,5 +10,6 @@ export const routerInstance = createRouter({
 });
 
 export const install = (app: any) => {
+			// asdasd
 	app.use(routerInstance);
 }
