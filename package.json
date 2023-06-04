@@ -23,7 +23,7 @@
   },
   "lint-staged": {
     "*.{vue,ts}": "eslint --fix",
-    "*.{css}": "npm run lint:style-fix"
+    "*.css": "npm run lint:style-fix"
   },
   "devDependencies": {
     "@testing-library/vue": "^7.0.0",
