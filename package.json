@@ -12,8 +12,8 @@
     "preview": "vite preview",
     "test": "npx vitest",
     "coverage": "vitest run --coverage",
-    "lint:style": "stylelint src/**/*.*.css",
-    "lint:style-fix": "npm run lint:style -- --fix",
+    "lint:style": "stylelint src/**/*.css",
+    "lint:style-fix": "stylelint src/**/*.css --fix",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -22,7 +22,8 @@
     "vue-router": "^4.1.6"
   },
   "lint-staged": {
-    "*.{vue,ts}": "eslint --fix"
+    "*.{vue,ts}": "eslint --fix",
+    "*.{css}": "npm run lint:style-fix"
   },
   "devDependencies": {
     "@testing-library/vue": "^7.0.0",
