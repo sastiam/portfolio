@@ -26,6 +26,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.5.2
+        with:
+          node-version: '16'
 
       # Runs a set of commands using the runners shell
       - name: Npm install & npm build
@@ -42,7 +44,7 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: 'us-east-1'
-          SOURCE: 'dist'
+          SOURCE_DIR: 'dist'
       
       - name: Invalidated cloudfront
         uses: chetan/invalidate-cloudfront-action@v1.3
