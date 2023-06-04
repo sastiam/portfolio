@@ -24,7 +24,7 @@
     "vue-router": "^4.1.6"
   },
   "lint-staged": {
-    "*": "prettier-format"
+    "*": "prettier --config .prettierrc 'src/**/*.ts' --write"
   },
   "husky": {
     "hooks": {
