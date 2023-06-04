@@ -10,6 +10,7 @@
     "resolveJsonModule": true,
     "isolatedModules": false,
     "esModuleInterop": true,
+    "skipLibCheck": true,
     "lib": [
       "esnext",
       "dom"

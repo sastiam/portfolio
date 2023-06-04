@@ -15,8 +15,11 @@ import Components from 'unplugin-vue-components/vite';
 //   plugins: [vue()],
 // })
 
+interface Env {
+  mode: string
+}
 
-export default async ({ mode }) => {
+export default async ({ mode }: Env) => {
   process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
 
   const appEnvironment = String(process.env.VUE_APP_ENVIRONMENT).toLowerCase();
