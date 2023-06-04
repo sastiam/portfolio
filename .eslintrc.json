@@ -2,16 +2,28 @@
 	"root": true,
 	"parser": "vue-eslint-parser",
 	"parserOptions": {
-			"parser": "@typescript-eslint/parser"
+		"parser": "@typescript-eslint/parser"
 	},
 	"extends": [
-			"plugin:vue/strongly-recommended",
-			"eslint:recommended",
-			"@vue/typescript/recommended"
+		"plugin:vue/strongly-recommended",
+		"eslint:recommended",
+		"@vue/typescript/recommended"
 	],
-	"plugins": ["@typescript-eslint"],
+	"plugins": [
+		"@typescript-eslint",
+		"vue"
+	],
 	"rules": {
-			// not needed for vue 3
-			"vue/no-multiple-template-root": "off"
+		// not needed for vue 3
+		"vue/no-multiple-template-root": "off",
+		"no-console": 0,
+    "no-undef": 0,
+    "semi": [
+			2, "always"
+		],
+    "space-before-function-paren": 0,
+    "object-property-newline": 0,
+    "vue/order-in-components": 0,
+		"vue/max-attributes-per-line": 1
 	}
 }
