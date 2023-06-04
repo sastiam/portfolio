@@ -13,7 +13,7 @@
     "preview": "vite preview",
     "test": "npx vitest",
     "coverage": "vitest run --coverage",
-    "lint:style": "stylelint src/**/*.*.scss",
+    "lint:style": "stylelint src/**/*.*.css",
     "lint:style-fix": "npm run lint:style -- --fix",
     "prepare": "husky install",
 		"prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
@@ -24,7 +24,8 @@
     "vue-router": "^4.1.6"
   },
   "lint-staged": {
-    "*": "prettier --config .prettierrc 'src/**/*.ts' --write"
+		"*.ts": [ "prettier --config .prettierrc 'src/**/*.ts' --write" ],
+    "*.css": [ "lint:style" ]
   },
   "husky": {
     "hooks": {
