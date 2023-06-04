@@ -1,0 +1,16 @@
+{
+    "extends": [
+      "plugin:vue/vue3-recommended"
+    ],
+    "globals": {
+      "Vi": "readonly"
+    },
+    "parser": "vue-eslint-parser",
+    "parserOptions": {
+      "parser": "@typescript-eslint/parser",
+      "project": "./tsconfig.json",
+      "tsconfigRootDir": ".",
+      "warnOnUnsupportedTypeScriptVersion": true,
+      "extraFileExtensions": [".vue"]
+    }
+  }

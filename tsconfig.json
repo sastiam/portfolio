@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "types": [
+      "vitest/globals",
+			"vite/client",
+			"vite-plugin-pages/client",
+			"vite-plugin-vue-layouts/client"
+    ]
+  },
+  "extends": "./tsconfig.paths.json",
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.vue",
+    "src/components.d.ts",
+    "src/auto-imports.d.ts",
+    "__tests__",
+    "vite.config.ts"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}
