@@ -24,9 +24,6 @@
   "lint-staged": {
     "*.{ts}": "eslint --fix"
   },
-  "husky": {
-    "pre-commit": "lint-staged"
-  },
   "devDependencies": {
     "@testing-library/vue": "^7.0.0",
     "@types/node": "^18.16.3",
