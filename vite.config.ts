@@ -69,9 +69,9 @@ export default async ({ mode }: Env) => {
         '~': resolve(__dirname, 'src'),
         assets: resolve(__dirname, 'src', 'assets'),
         '@components': resolve(__dirname, 'src/components/'),
-        '@pages': resolve(__dirname, 'src/pages'),
+        '@pages': resolve(__dirname, 'src/pages/'),
         '@utils': resolve(__dirname, 'src/utils/index'),
-        '@styles': resolve(__dirname, 'src/styles'),
+        '@assets': resolve(__dirname, 'src/assets/'),
       },
     },
     build: {

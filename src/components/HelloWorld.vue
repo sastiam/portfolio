@@ -1,14 +1,16 @@
 <script setup lang="ts">
+import SeparatorTitle from './general/text/SeparatorTitle.vue';
+
 
 defineProps<{ msg: string }>();
 
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
+  <SeparatorTitle :title="msg" />
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .read-the-docs {
   color: #888;
 }
