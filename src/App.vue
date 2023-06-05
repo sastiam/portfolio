@@ -6,5 +6,5 @@ import HelloWorld from './components/HelloWorld.vue';
   <HelloWorld msg="Titulo Separador" />
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 </style>
