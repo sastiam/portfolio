@@ -9,9 +9,11 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    BadgeText: typeof import('./components/general/text/BadgeText.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    SeparatorTitle: typeof import('./components/general/text/SeparatorTitle.vue')['default']
+    ShortPresentation: typeof import('./components/about/ShortPresentation.vue')['default']
+    TopNavbar: typeof import('./components/general/navbar/TopNavbar.vue')['default']
   }
 }

@@ -1,34 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-
-@font-face {
-  font-family: 'Inter';
-  src: url('fonts/Inter-Regular.ttf') format('truetype');
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  font-family: 'Inter';
-  src: url('fonts/Inter-Medium.ttf') format('truetype');
-  font-weight: 500;
-}
-@font-face {
-  font-family: 'Inter';
-  src: url('fonts/Inter-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-}
-@font-face {
-  font-family: 'Inter';
-  src: url('fonts/Inter-Bold.ttf') format('truetype');
-  font-weight: 700;
-}
-@font-face {
-  font-family: 'Inter';
-  src: url('fonts/Inter-Light.ttf') format('truetype');
-  font-weight: 300;
-}
-
-html,
-body,
-#app {
-  font-family: 'Inter', sans-serif;
-}
+@import "fonts";
+@import "color-themes";
+@import "base";

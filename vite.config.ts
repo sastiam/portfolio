@@ -63,6 +63,13 @@ export default async ({ mode }: Env) => {
 
       Layouts(),
     ],
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `@import "@assets/style/variables.scss";`,
+        },
+      }
+    },
     resolve: {
       alias: {
         src: resolve(__dirname, 'src'),

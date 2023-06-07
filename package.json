@@ -19,9 +19,9 @@
   },
   "dependencies": {
     "@vueuse/core": "^10.1.0",
+    "postcss": "^8.4.24",
     "vue": "^3.2.47",
-    "vue-router": "^4.1.6",
-    "postcss": "^8.4.24"
+    "vue-router": "^4.1.6"
   },
   "lint-staged": {
     "*.{vue,ts}": "eslint --fix",
@@ -49,6 +49,7 @@
     "husky": "^8.0.0",
     "jsdom": "^21.1.1",
     "lint-staged": "^13.2.2",
+    "postcss-nesting": "^11.2.2",
     "pre-push": "^0.1.4",
     "sass": "^1.62.1",
     "sass-loader": "^13.3.1",

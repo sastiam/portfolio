@@ -1,9 +1,12 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue';
 </script>
 
 <template>
-  <HelloWorld msg="Titulo Separador" />
+  <div class="theme theme--default">
+    <main class="base">
+      <router-view />
+    </main>
+  </div>
 </template>
 
 <style lang="scss" scoped>

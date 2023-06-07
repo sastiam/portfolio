@@ -1,0 +1,48 @@
+html,
+body,
+#app {
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
+html, body {
+    background: $bg--light;
+
+    p {
+        white-space: pre-line;
+
+        @include themed() {
+            color: t($text)
+        }
+    }
+
+    span {
+        @include themed() {
+            color: t($text)
+        }
+    }
+}
+
+
+.base {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 45px;
+    height: min-content;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 20px 72px 64px;
+    position: relative;
+
+    @include themed() {
+        color: t($text);
+        background: t($bg);
+    }
+}
