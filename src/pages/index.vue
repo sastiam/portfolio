@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <short-presentation />
-  <HelloWorld msg="Software Developer" />
+  <card-project />
 </template>
 
 <script setup lang="ts">

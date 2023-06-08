@@ -1,8 +1,8 @@
 <template>
   <div class="topnav">
-    <span>top navbar</span>
-    <span>Sastiam!</span>
-    <span>top navbar</span>
+    <span>About me.</span>
+    <span>Sastiam! Logo</span>
+    <span>Social Links</span>
   </div>
 </template>
 

@@ -3,14 +3,14 @@
     <span>Logo!</span>
     <div class="short-presentation__content">
       <div class="short-presentation__content__title">
-        <p>Hi, I’m Sebastian</p>
+        <p>Hi, I’m Sebastian a</p>
         <badge-text
           title="Software Developer"
           size="medium"
           type="primary"
         />
       </div>
-      <p>based in Peru</p>
+      <p>based in Peru.</p>
     </div>
   </section>
 </template>

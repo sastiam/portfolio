@@ -21,6 +21,7 @@
     flex-direction: column;
     gap: 45px;
     flex-wrap: nowrap;
+    align-items: center;
 }
 
 </style>
