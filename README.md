@@ -5,7 +5,7 @@
 Mi sitio personal, publicado en <https://sastiam.github.io/>.
 
 ## Por qué existe
-Es un banco de pruebas para aprender frontend moderno (Vue 3, Astro, accesibilidad y rendimiento) construyendo algo real, y a la vez el lugar donde documentaré mis proyectos con sus límites. Hoy es solo un lienzo: una página con un dibujo.
+Es mi portafolio de proyectos.
 
 ## Qué hay ahora
 - `index.html`: la página, sin JavaScript.
