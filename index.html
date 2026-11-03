@@ -1,13 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sastiam Portfolio</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>sastiam</title>
+  <meta name="description" content="Sitio personal en construcción.">
+  <style>
+    :root { color-scheme: light dark; --fondo: #fff; --texto: #0f1419; }
+    @media (prefers-color-scheme: dark) { :root { --fondo: #0f1419; --texto: #e6f0f4; } }
+    body { margin: 0; min-height: 100dvh; background: var(--fondo); color: var(--texto);
+           font: 1rem/1.5 system-ui, sans-serif; }
+    .costa { position: fixed; inset: auto 0 0 0; height: 100dvh; pointer-events: none; opacity: .18;
+             -webkit-mask-image: linear-gradient(0deg, #000 45%, transparent);
+             mask-image: linear-gradient(0deg, #000 45%, transparent); }
+    .costa img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: bottom center; }
+    main { position: relative; max-width: 42rem; margin: 0 auto; padding: 6rem 1.5rem; }
+    h1 { margin: 0 0 .5rem; font-size: 2.25rem; letter-spacing: -.03em; }
+  </style>
+</head>
+<body>
+  <div class="costa" aria-hidden="true">
+    <img src="costa-verde.svg" alt="" width="1600" height="800" decoding="async">
+  </div>
+  <main>
+    <h1>sastiam</h1>
+    <p>Sitio en construcción.</p>
+  </main>
+</body>
 </html>
