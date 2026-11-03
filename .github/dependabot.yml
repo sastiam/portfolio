@@ -1,0 +1,10 @@
+version: 2
+updates:
+  # Mantiene al día las acciones fijadas por SHA
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: ci
+  # Cuando el sitio tenga package.json (Astro, Vue), añade aquí el ecosistema npm.
